@@ -68,7 +68,7 @@ import mongoose from "mongoose";
 import bcrypt from "bcryptjs";
 import cors from "cors";
 import dotenv from "dotenv";
-import User from "./models/User.js"; // make sure path is correct
+import User from "./models/User.js"; 
 import Post from "./models/Post.js"; 
 
 dotenv.config();
