@@ -84,7 +84,7 @@ app.post("/createpost", async (req, res) => {
 });
 
 
-// Get all posts by logged-in user
+// Get all posts 
 app.get("/getMyPosts", async (req, res) => {
   try {
     const { userID } = req.query;
@@ -99,7 +99,7 @@ app.get("/getMyPosts", async (req, res) => {
 });
 
 
-// Get post by ID (only if it belongs to logged-in user)
+// Get post by ID 
 app.get("/getPostById", async (req, res) => {
   try {
     const { postID } = req.query;
