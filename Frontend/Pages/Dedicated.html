@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>View Post</title>
   <style>
-    /* Basic Reset */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -192,7 +191,7 @@
         titleEl.innerText = post.postTitle;
         descEl.innerText = post.postDescription;
 
-        // Show buttons only to owner
+        // Show buttons
         if (post.userID !== loggedInUser) {
           editBtn.style.display = "none";
           deleteBtn.style.display = "none";
